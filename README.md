@@ -1,8 +1,7 @@
-# findIMPACT
+# IMPACT_finder
 
 Find files anywhere in the IMPACT NCI R01 project folder using loose,
-fuzzy keywords - no hardcoded filenames or paths required, and it works
-the same way on every team member's computer.
+fuzzy keywords - no hardcoded filenames or paths required.
 
 ```r
 find_files("2023", "MA_contracts")
@@ -30,16 +29,14 @@ preview_top(results)
 
 ```r
 # install.packages("remotes")  # if you don't have it
-remotes::install_github("YOUR-ORG/findIMPACT")
+remotes::install_github("viwack/IMPACT_finder")
 ```
 
-Replace `YOUR-ORG` with wherever this repo actually lives once it's
-pushed to GitHub.
 
 ## Usage
 
 ```r
-library(findIMPACT)
+library(IMPACT_finder)
 
 # Basic search - requires ALL terms to match (default)
 find_files("2023", "MA_contracts")
@@ -65,7 +62,7 @@ doesn't work for you (e.g. you're running R from somewhere outside the
 project), set it once per session:
 
 ```r
-options(findIMPACT.root = "C:/Users/you/OneDrive - University of Pittsburgh/IMPACT NCI R01 - Documents")
+options(IMPACT_finder.root = "C:/Users/you/OneDrive - University of Pittsburgh/IMPACT NCI R01 - Documents")
 ```
 
 or as an environment variable (e.g. in your `.Renviron`):
