@@ -1,0 +1,27 @@
+Package: findIMPACT
+Type: Package
+Title: Fuzzy File Finder for the IMPACT NCI R01 Project Folder
+Version: 0.1.0
+Authors@R: person("IMPACT NCI R01", "Study Team", email = "you@pitt.edu", role = c("aut", "cre"))
+Description: Search the IMPACT NCI R01 project folder for files using loose,
+    fuzzy keywords instead of hardcoded filenames or paths (e.g. "MA_contracts"
+    finds a path containing "MA_ctrct"). Also previews matched files (size,
+    last modified date, and - for common tabular formats - column names and
+    the first few rows) so you can confirm you found the right file before
+    opening it. Works the same way for every team member regardless of their
+    computer or local OneDrive path, since the project root is auto-detected
+    rather than hardcoded.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    tools,
+    utils
+Suggests:
+    readxl,
+    haven,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/YOUR-ORG/findIMPACT
+BugReports: https://github.com/YOUR-ORG/findIMPACT/issues
